@@ -1,0 +1,47 @@
+.button{
+  display: inline-block;
+  padding: 1.1rem 4.5rem;
+  border: 0.3rem solid $color-yellow;
+  @include font(1.5rem, 2.5rem, 700, normal, $color-white, $heading-font-family);
+  text-align: center;
+  background-color: $color-yellow;
+
+  &:hover{
+    background-color: transparent;
+    color: $color-yellow;
+}}
+
+.toggler__button{
+  background: none;
+  border: none;
+  display: none;
+
+  @include responsive(tablet_3){
+    display: block;
+  }
+}
+
+.toggler__button-close{
+  background: none;
+  border: none;
+  display: none;
+
+  @include responsive(tablet_3){
+    display: block;
+    margin-bottom: 3rem;
+  }
+}
+
+.header__button{
+  padding: 1.4rem 3.9rem;
+  white-space: nowrap;
+}
+
+.info-link {
+  width: 18rem;
+  padding: 1.1rem 4.1rem;
+}
+
+.trade__link{
+
+}

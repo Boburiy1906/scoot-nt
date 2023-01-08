@@ -1,0 +1,34 @@
+.sitenav {
+  margin-right: auto;
+  @include responsive(tablet_3){
+   margin-right: 0;
+  }
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  @include responsive(tablet_3){
+    flex-direction: column;
+    margin-bottom: 85px;
+
+  }
+}
+
+.sitenav__item {}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 3.2rem;
+  @include responsive(tablet_3){
+   margin-right: 0;
+   margin-bottom: 16px;
+  }
+}
+
+.sitenav__link {
+  @include font(1.5rem, 2.5rem, 700, normal, $color-dim-gray, $heading-font-family);
+}
+
+.sitenav__link:hover{
+  color: $color-yellow;
+}

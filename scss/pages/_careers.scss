@@ -1,0 +1,37 @@
+.trade {
+
+  &__container {
+    padding-top: 4rem;
+    padding-bottom: 16rem;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.8rem 4rem;
+    background-color: $color-card-bg;
+    &:not(:last-child){
+      margin-bottom: 2.4rem;
+    }
+
+    @include responsive(tablet_4){
+      flex-direction: column;
+    }
+  }
+  &__card-info {
+    @include responsive(tablet_4){
+      text-align: center;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__card-title {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+  &__card-text {
+    margin: 0;
+  }
+  &__link {
+  }
+}

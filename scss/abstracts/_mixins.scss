@@ -1,0 +1,76 @@
+@mixin font($size, $line, $weight, $letter, $color, $font) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  color: $color;
+  font-family: $font;
+}
+
+@mixin responsive($size) {
+  @if $size==desktop_1 {
+    @media screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop_2 {
+    @media screen and (max-width: 1300px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop_3 {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop_4 {
+    @media screen and (max-width: 1100px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop_5 {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_1 {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_2 {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_3 {
+    @media screen and (max-width: 750px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_4 {
+    @media screen and (max-width: 550px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_5 {
+    @media screen and (max-width: 430px) {
+      @content;
+    }
+  }
+
+  @else if $size==mobile {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+}

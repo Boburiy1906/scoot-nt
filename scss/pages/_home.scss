@@ -1,0 +1,311 @@
+.hero {
+  position: relative;
+  background: radial-gradient(rgba(47, 59, 89, 100%), rgba(229, 234, 241, 0.25)), url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include responsive(desktop_5) {
+    background: radial-gradient(rgba(47, 59, 89, 100%),
+        rgba(229, 234, 241, 0.25)), url(../img/hero-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include responsive(mobile) {
+    background: radial-gradient(rgba(47, 59, 89, 100%),
+        rgba(229, 234, 241, 0.25)), url(../img/hero-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    content: url(../img/line-yellow-hero.svg);
+    position: absolute;
+    left: 0;
+    top: 345px;
+    width: 100%;
+    max-width: 202px;
+    display: inline-block;
+
+    @include responsive(desktop_1) {
+      content: "";
+    }
+  }
+
+  &::after {
+    content: url(../img/arrow-right-hero.svg);
+    position: absolute;
+    left: 50%;
+    top: 345px;
+
+    @include responsive(desktop_4) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: 0;
+      top: 520px;
+    }
+
+    @include responsive(desktop_5) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: 0;
+      top: 520px;
+    }
+
+    @include responsive(tablet_1) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -20%;
+      top: 480px;
+    }
+    @include responsive(tablet_2) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -20%;
+      top: 500px;
+    }
+
+    @include responsive(tablet_3) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -30%;
+      top: 490px;
+    }
+
+    @include responsive(tablet_4) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -40%;
+      top: 440px;
+    }
+
+    @include responsive(tablet_5) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -80%;
+      top: 540px;
+    }
+
+    @include responsive(mobile) {
+      content: url(../img/arrow-right-hero.svg);
+      position: absolute;
+      height: 137px;
+      left: -90%;
+      top: 520px;
+    }
+
+  }
+
+  &__container {
+    padding-top: 153px;
+    padding-bottom: 153px;
+
+    @include responsive(desktop_4) {
+      padding-top: 140px;
+      padding-bottom: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include responsive(desktop_5) {
+      padding-top: 130px;
+    }
+
+    @include responsive(tablet_1) {
+      padding-top: 120px;
+    }
+
+    @include responsive(mobile) {
+      padding-top: 115px;
+    }
+
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 500px;
+    color: $color-white;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @include responsive(desktop_4) {
+      margin-bottom: 30px;
+    }
+
+    @include responsive(tablet_1) {
+      text-align: center;
+    }
+
+    @include responsive(mobile) {}
+  }
+
+  &__info {
+    padding-left: 95px;
+
+    @include responsive(desktop_4) {
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 431px;
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+    color: $color-white;
+
+    @include responsive(desktop_4) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/*FEATURES*/
+
+.features {
+
+  &__container {
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+
+    @include responsive(tablet_3){
+      padding-top: 12rem;
+    }
+  }
+
+  &__cards {
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 40px;
+      left: -19%;
+      width: 1000px;
+      height: 15px;
+      background-color: $color-light-gray;
+
+      @include responsive(desktop_3) {
+        top: -62%;
+        left: 22%;
+        width: 15px;
+        height: 740px;
+      }
+
+      @include responsive (desktop_4) {
+        left: 25%;
+      }
+
+      @include responsive (desktop_5) {
+        left: 22%;
+      }
+
+      @include responsive (tablet_1) {
+        left: 20%;
+      }
+
+      @include responsive (tablet_2) {
+        height: 770px;
+        left: 18%;
+      }
+
+      @include responsive (tablet_3) {
+        content: none;
+      }
+
+    }
+
+    @include responsive(desktop_3) {
+      flex-direction: column;
+      padding-left: 205px;
+    }
+
+    @include responsive(desktop_4) {
+      padding-left: 195px;
+    }
+
+    @include responsive(desktop_5) {
+      padding-left: 160px;
+    }
+
+    @include responsive(tablet_1) {
+      padding-left: 120px;
+    }
+
+    @include responsive(tablet_2) {
+      padding-left: 90px;
+    }
+
+    @include responsive(tablet_3) {
+      padding-left: 0;
+    }
+
+  }
+
+
+  &__card {
+    @include responsive(desktop_3) {
+      display: flex;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include responsive(desktop_3) {
+        margin-right: 0;
+      }
+    }
+
+    @include responsive(tablet_3) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 40px;
+  }
+
+  &__info-wrapper {
+    @include responsive(desktop_3) {
+      max-width: 400px;
+      margin-left: 40px;
+    }
+
+    @include responsive(tablet_3) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+
+  }
+
+  &__card-title {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+
+  &__card-text {
+    margin: 0;
+    color: $color-dim-gray;
+
+    @include responsive(tablet_3) {
+      text-align: center;
+    }
+  }
+}

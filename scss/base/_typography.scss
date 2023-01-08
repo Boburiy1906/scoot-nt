@@ -1,0 +1,82 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/space-mono-v12-latin-700.woff2') format('woff2'),
+    url('/fonts/space-mono-v12-latin-regular.woff') format('woff');
+    font-display: swap;
+}
+
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('/fonts/space-mono-v12-latin-700.woff2') format('woff2'),
+    url('/fonts/space-mono-v12-latin-700.woff') format('woff');
+    font-display: swap;
+}
+
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'),
+    url('/fonts/lexend-deca-v17-latin-regular.woff') format('woff');
+    font-display: swap;
+}
+
+
+h1{
+  @include font(5.6rem, 5.6rem, 700, -0.25rem, $color-dark-navy, $heading-font-family);
+}
+
+h2{
+  @include font(4.8rem, 4.8rem, 700, -0.214rem, $color-dark-navy, $heading-font-family);
+}
+
+h3{
+  @include font(4.0rem, 4.8rem, 700, -0.179rem, $color-dark-navy, $heading-font-family);
+}
+
+h4{
+  @include font(2.4rem, 2.8rem, 700, -0.107rem, $color-dark-navy, $heading-font-family);
+}
+
+p{
+  @include font(1.5rem, 2.5rem, 400, normal, $color-dark-navy, $main-font-family);
+}
+
+@include responsive(tablet_4){
+  h1{
+    @include font(4.6rem, 4.8rem, 700, -0.018rem, $color-white, $heading-font-family);
+  }
+  p{
+    @include font(1.5rem, 2.5rem, 400, -0.08rem, $color-dark-navy, $main-font-family);
+  }
+}
+
+@include responsive(mobile){
+h1{
+  @include font(4rem, 4rem, 700, -0.018rem, $color-white, $heading-font-family);
+}
+h2{
+  @include font(3.2rem, 3.2rem, 700, -0.018rem, $color-dark-navy, $heading-font-family);
+}
+h3{
+  @include font(2.4rem, 2.8rem, 700, -0.017rem, $color-dark-navy, $heading-font-family);
+}
+h4{
+  @include font(1.8rem, 2.4rem, 700, -0.08rem, $color-dark-navy, $heading-font-family);
+}
+
+p{
+  @include font(1.5rem, 2.5rem, 400, -0.08rem, $color-dark-navy, $main-font-family);
+}
+}

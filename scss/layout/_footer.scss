@@ -1,0 +1,58 @@
+.footer {
+  background-color: $color-black-footer-bg;
+
+  &__container {
+    padding-top: 35px;
+    padding-bottom: 32px;
+    display: flex;
+
+    @include responsive(tablet_3){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo-link {
+    margin-right: 60px;
+    @include responsive(tablet_3){
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__logo {
+    height: 2.8rem;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    @include responsive(tablet_3){
+      flex-direction: column;
+          }
+  }
+
+  &__network-wrapper {
+    display: flex;
+    align-items: center;
+    @include responsive(tablet_3){
+
+     }
+  }
+
+  &__network-link {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__network-icon:hover path {
+    fill: $color-yellow;
+    opacity: 1;
+  }
+
+}
