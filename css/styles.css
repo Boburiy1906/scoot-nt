@@ -591,6 +591,32 @@ a:active {
   display: none;
 }
 
+.about-hero {
+  background: radial-gradient(rgb(47, 59, 89), rgba(229, 234, 241, 0.25)), url(../img/about-hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-hero__container {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+  position: relative;
+}
+.about-hero__cicle {
+  position: absolute;
+  top: 40%;
+  right: -15%;
+}
+.about-hero__title {
+  margin: 0;
+  color: #fff;
+}
+@media screen and (max-width: 550px) {
+  .about-hero__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .values {
   padding-top: 4rem;
   padding-bottom: 8rem;
@@ -1180,32 +1206,6 @@ a:active {
 }
 @media screen and (max-width: 750px) {
   .features__card-text {
-    text-align: center;
-  }
-}
-
-.about-hero {
-  background: radial-gradient(rgb(47, 59, 89), rgba(229, 234, 241, 0.25)), url(../img/about-hero-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.about-hero__container {
-  padding-top: 7.2rem;
-  padding-bottom: 7.2rem;
-  position: relative;
-}
-.about-hero__cicle {
-  position: absolute;
-  top: 40%;
-  right: -15%;
-}
-.about-hero__title {
-  margin: 0;
-  color: #fff;
-}
-@media screen and (max-width: 550px) {
-  .about-hero__title {
-    width: 100%;
     text-align: center;
   }
 }
